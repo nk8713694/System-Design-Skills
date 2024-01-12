@@ -1,0 +1,174 @@
+<mxfile host="Electron" modified="2024-01-12T14:23:05.288Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.5.1 Chrome/112.0.5615.204 Electron/24.6.0 Safari/537.36" etag="ESoxj2n_tJkKLMIfXG98" version="21.5.1" type="device">
+  <diagram name="Page-1" id="xRwB7yfp298dY6_jzojX">
+    <mxGraphModel dx="596" dy="1790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pcXuH6F2qDkkQombep1e-2" value="client&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-3" value="rate limiter" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-4" value="API&lt;br&gt;&amp;nbsp;SERVERS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="270" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-7" value="" style="shape=link;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="160" y="300" as="sourcePoint" />
+            <mxPoint x="260" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-8" value="" style="shape=link;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="350" y="294.5" as="sourcePoint" />
+            <mxPoint x="450" y="294.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pcXuH6F2qDkkQombep1e-9" target="pcXuH6F2qDkkQombep1e-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-9" value="Counter Component&lt;br&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pcXuH6F2qDkkQombep1e-11" target="pcXuH6F2qDkkQombep1e-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pcXuH6F2qDkkQombep1e-11" target="pcXuH6F2qDkkQombep1e-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-11" value="Token bucket algo&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-13" value="bucket sizze of 10" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="620" y="410" width="110" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-15" value="lets say we got 1000ms and 2 requests" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-17" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="690" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pcXuH6F2qDkkQombep1e-18" target="pcXuH6F2qDkkQombep1e-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-18" value="client identifier" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pcXuH6F2qDkkQombep1e-19" target="pcXuH6F2qDkkQombep1e-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pcXuH6F2qDkkQombep1e-19" target="pcXuH6F2qDkkQombep1e-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-19" value="rate limiter calculator&lt;br&gt;yaha buckets banenge" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="690" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pcXuH6F2qDkkQombep1e-20" target="pcXuH6F2qDkkQombep1e-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-20" value="Rate limiter 1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pcXuH6F2qDkkQombep1e-22" target="pcXuH6F2qDkkQombep1e-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-22" value="rules resolver" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="860" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pcXuH6F2qDkkQombep1e-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-25" value="rules service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="860" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pcXuH6F2qDkkQombep1e-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-28" value="rules db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="520" y="970" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-30" value="API 1 rule 1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="630" y="978" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-31" value="api 2 rule 2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="630" y="1008" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-33" value="API1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="pcXuH6F2qDkkQombep1e-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1130" y="690" as="sourcePoint" />
+            <mxPoint x="990" y="663.2" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1150" y="660" />
+              <mxPoint x="990" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-34" value="API 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="700" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pcXuH6F2qDkkQombep1e-37" target="pcXuH6F2qDkkQombep1e-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-37" value="request processor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-39" value="Allow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="700" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-42" value="How to scale rate limiter now" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1120" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pcXuH6F2qDkkQombep1e-43" target="pcXuH6F2qDkkQombep1e-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-43" value="LB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pcXuH6F2qDkkQombep1e-44" target="pcXuH6F2qDkkQombep1e-48">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="1220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-44" value="host 1 : Rate limter 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pcXuH6F2qDkkQombep1e-45" target="pcXuH6F2qDkkQombep1e-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pcXuH6F2qDkkQombep1e-45" target="pcXuH6F2qDkkQombep1e-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-45" value="host 2 : Rate limter 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-48" value="redis cache" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="1105" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-51" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1800" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-52" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="1620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-53" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;System Design :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;rate limiter application :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;functional requirements :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;identify the req based on client id :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;are there any subscriptions for the clients :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;like 10 req for sec for everyone :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;distribbuted env :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;non functional requirement :&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;fault tolerance :&lt;/div&gt;&lt;div&gt;&amp;nbsp;high available :&lt;/div&gt;&lt;div&gt;&amp;nbsp;accurate :&lt;/div&gt;&lt;div&gt;&amp;nbsp;scalable:&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;what if we reject the request :&lt;/div&gt;&lt;div&gt;we can send the response like too manny requests:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;now rate limiter will use counter component ( see in draw io)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;now in counter component we will use algorithms :&lt;/div&gt;&lt;div&gt;token bucket algorithms:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;every client will be having a unqiue bucket :&amp;nbsp;&lt;/div&gt;&lt;div&gt;say 10 size so 10 tokens :&lt;/div&gt;&lt;div&gt;first 100 ms 3 request&lt;/div&gt;&lt;div&gt;second 200ms 5 request , so 8 tokens used&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;when we will refill the bucket , this is the question :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;now we define a thershold for refilling :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;questions :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;we have many apis and some will say we will allow 10 req per sec&lt;/div&gt;&lt;div&gt;some will say 500 req per sec&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;how will be manage this scenario :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;answer : we will have bucket for each api level:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ques : ya but how will u manage this design how will ur databse looks like&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;question : how to scale rate limiter : since as i can see in the desing&lt;/div&gt;&lt;div&gt;1 rate limiter can handle mmutplie apis :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;now when Load balancer comes up so we have to maintain crud&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;like suppose 1st one consumes 2 req in 2000 ms&amp;nbsp;&lt;/div&gt;&lt;div&gt;then 8 request are left to be consumed in 1 sec&amp;nbsp;&lt;/div&gt;&lt;div&gt;if the request is taken by other host :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;sticky session solution is to give all the request to same server , it can be a solution when we have less no of users :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;otherwise not we have to think something else:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;hosts needs to talk or comomn component we need like redis cache kind of thing :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;redis cache can be one solution :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;what if we add a new host&amp;nbsp; :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;there should something called as host registyory :&lt;/div&gt;&lt;div&gt;basically common registory :&lt;/div&gt;&lt;div&gt;so they will be in sink :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;how will they talk :&lt;/div&gt;&lt;div&gt;redis cache:&lt;/div&gt;&lt;div&gt;or randomly can become a leader and it can update the other system :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;do u see single point of failure :&lt;/div&gt;&lt;div&gt;so if hosst 1 is down , we have host 2 and other to manage :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;feedback :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;estimaton was missing like wha tif billions req:&lt;/div&gt;&lt;div&gt;why distibuted system:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="-37" width="640" height="1680" as="geometry" />
+        </mxCell>
+        <mxCell id="pcXuH6F2qDkkQombep1e-54" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="1550" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
