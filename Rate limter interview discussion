@@ -1,0 +1,116 @@
+
+
+
+System Design :
+
+rate limiter application :
+
+functional requirements :
+
+
+identify the req based on client id :
+
+are there any subscriptions for the clients :
+
+like 10 req for sec for everyone :
+
+distribbuted env :
+
+
+non functional requirement :
+ 
+ fault tolerance :
+ high available :
+ accurate :
+ scalable:
+ 
+what if we reject the request :
+we can send the response like too manny requests:
+
+
+now rate limiter will use counter component ( see in draw io)
+
+
+now in counter component we will use algorithms :
+token bucket algorithms:
+
+
+
+every client will be having a unqiue bucket : 
+say 10 size so 10 tokens :
+first 100 ms 3 request
+second 200ms 5 request , so 8 tokens used 
+
+when we will refill the bucket , this is the question :
+
+now we define a thershold for refilling :
+
+questions :
+
+we have many apis and some will say we will allow 10 req per sec
+some will say 500 req per sec 
+
+how will be manage this scenario :
+
+answer : we will have bucket for each api level:
+
+ques : ya but how will u manage this design how will ur databse looks like
+
+
+
+question : how to scale rate limiter : since as i can see in the desing
+1 rate limiter can handle mmutplie apis :
+
+
+now when Load balancer comes up so we have to maintain crud
+
+like suppose 1st one consumes 2 req in 2000 ms 
+then 8 request are left to be consumed in 1 sec 
+if the request is taken by other host :
+
+sticky session solution is to give all the request to same server , it can be a solution when we have less no of users :
+
+otherwise not we have to think something else:
+
+
+
+hosts needs to talk or comomn component we need like redis cache kind of thing :
+
+redis cache can be one solution :
+
+
+
+what if we add a new host  :
+
+there should something called as host registyory :
+basically common registory :
+so they will be in sink :
+
+how will they talk :
+redis cache:
+or randomly can become a leader and it can update the other system :
+
+do u see single point of failure :
+so if hosst 1 is down , we have host 2 and other to manage :
+
+
+feedback :
+
+estimaton was missing like wha tif billions req:
+why distibuted system:
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
